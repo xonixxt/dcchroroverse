@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DC ChronoVerse - Login</title>
+    <title>Página do Login - DC ChronoVerse</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <main class="login-container">
-        
-        <header>
-            <h1>DC ChronoVerse</h1>
-            <p>Acesse sua conta para ver a linha do tempo</p>
-        </header>
-
-        <form action="home.html" method="GET">
-            <div class="form-group">
-                <label for="usuario" class="sr-only">Usuário</label>
-                <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
-            </div>
-
-            <div class="form-group">
-                <label for="senha" class="sr-only">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Senha" required>
-            </div>
-
-            <button type="submit">Entrar</button>
-        </form>
-
+        <section class="login-box">
+            <header>
+                <h1>DC ChronoVerse</h1>
+                <p>Acesse a cronologia oficial</p>
+            </header>
+            <form action="cronologia.html">
+                <div class="field">
+                    <label for="user">Usuário</label>
+                    <input type="text" id="user" name="user" required>
+                </div>
+                <div class="field">
+                    <label for="pass">Senha</label>
+                    <input type="password" id="pass" name="pass" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
     </main>
 
+    <footer>
+        <p>&copy; 2026 DC ChronoVerse - Projeto de Aplicações para Internet</p>
+    </footer>
+    
 </body>
 </html>
