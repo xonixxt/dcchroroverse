@@ -1,0 +1,3 @@
+<img width="2048" height="1456" alt="_C__Users_amari_OneDrive_%C3%81rea%20de%20Trabalho_dcchroroverse_cronologia html_user=Q pass=354 (6)" src="https://github.com/user-attachments/assets/165a93c9-6b8b-4363-b0cb-b4dcfd10bec7" />
+<img width="1536" height="1092" alt="_C__Users_amari_OneDrive_%C3%81rea%20de%20Trabalho_dcchroroverse_cronologia html_user=Q pass=354 (4)" src="https://github.com/user-attachments/assets/500700e5-ec75-41ab-87b4-951ec7d455dd" />
+<img width="750" height="1092" alt="_C__Users_amari_OneDrive_%C3%81rea%20de%20Trabalho_dcchroroverse_cronologia html_user=Q pass=354 (5)" src="https://github.com/user-attachments/assets/52a1b1e3-d607-4281-931f-0d093df4937a" />
