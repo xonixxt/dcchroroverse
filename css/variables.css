@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #0a84ff;
+    --color-bg: #0b0c10;
+    --color-card: #1c1c1c;
+    --color-text: #ffffff;
+    --color-muted: #aaaaaa;
+
+    --font-main: 'Poppins', sans-serif;
+
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+}
