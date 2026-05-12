@@ -1,0 +1,36 @@
+/* css/layout.css */
+
+.cards-grid {
+
+    display: grid;
+
+    /*
+        auto-fill: cria o máximo de colunas possíveis
+        minmax(280px, 1fr):
+        mínimo de 280px por card
+        máximo ocupando espaço proporcional
+    */
+
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+    gap: 1.5rem;
+
+    padding: 2rem 0;
+}
+
+/* Card em destaque ocupa 2 colunas */
+
+.card--featured {
+
+    grid-column: span 2;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .card--featured {
+
+        grid-column: span 1;
+    }
+}
