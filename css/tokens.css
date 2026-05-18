@@ -1,0 +1,9 @@
+:root {
+    /* Cor primaria da marca — identificada em 23 ocorrências no CSS */
+--color-brand: #4F46E5;
+/* Raio de borda padrão — estava em 11 componentes diferentes */
+--radius-default: 0.5rem;
+/* Espancamento entre seções — margin-bottom mais comum */
+--space-section: 2rem;
+}
+

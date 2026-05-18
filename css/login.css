@@ -1,77 +1,116 @@
+@import url("./tokens/primitivos.css");
+@import url("./tokens/semanticos.css");
+@import url("./tokens/componentes.css");
+
+:root {
+    /* Cores */
+    --color-primary: #0a84ff;
+    --color-primary-hover: #0066cc;
+
+    --color-bg-card: #111;
+    --color-bg-input: #1c1c1c;
+
+    --color-text: #fff;
+    --color-text-secondary: #aaa;
+
+    --color-shadow: rgba(0, 0, 0, 0.5);
+
+    /* Espaçamentos */
+    --spacing-xs: 0.3rem;
+    --spacing-sm: 0.6rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+
+    /* Bordas */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+
+    /* Sombras */
+    --shadow-default: 0 0 20px var(--color-shadow);
+
+    /* Tamanhos */
+    --login-max-width: 350px;
+
+    /* Transições */
+    --transition-default: 0.3s;
+}
 
 .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 1rem;
+    padding: var(--spacing-md);
 }
 
 .login-box {
     width: 100%;
-    max-width: 350px;
-    background: #111;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    max-width: var(--login-max-width);
+    background: var(--color-bg-card);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-default);
 }
 
 .login-box header {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--spacing-lg);
 }
 
 .login-box h1 {
-    color: #0a84ff;
-    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    margin-bottom: calc(var(--spacing-xs) + 0.2rem);
 }
 
 .login-box p {
     font-size: 0.9rem;
-    color: #aaa;
+    color: var(--color-text-secondary);
 }
 
 .field {
-    margin-bottom: 1rem;
+    margin-bottom: var(--spacing-md);
     display: flex;
     flex-direction: column;
 }
 
 .field label {
-    margin-bottom: 0.3rem;
+    margin-bottom: var(--spacing-xs);
     font-size: 0.85rem;
+    color: var(--color-text);
 }
 
 .field input {
-    padding: 0.6rem;
-    border-radius: 6px;
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
     border: none;
     outline: none;
-    background: #1c1c1c;
-    color: #fff;
+    background: var(--color-bg-input);
+    color: var(--color-text);
+    transition: var(--transition-default);
 }
 
 .field input:focus {
-    border: 1px solid #0a84ff;
+    border: 1px solid var(--color-primary);
 }
 
 button {
     width: 100%;
     padding: 0.7rem;
-    background: #0a84ff;
+    background: var(--color-primary);
     border: none;
-    border-radius: 6px;
-    color: #fff;
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: var(--transition-default);
 }
 
 button:hover {
-    background: #0066cc;
+    background: var(--color-primary-hover);
 }
 
 body:has(.login-container) footer {
     text-align: center;
-    padding: 1rem;
+    padding: var(--spacing-md);
 }
