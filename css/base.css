@@ -1,0 +1,29 @@
+/* base/base.css */
+
+/* CONFIGURAÇÕES BASE */
+
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+/* ACESSIBILIDADE — FOCO VISÍVEL */
+
+/*
+    Nunca remover foco sem alternativa.
+    :focus-visible aparece apenas
+    na navegação por teclado.
+*/
+
+:focus {
+    outline: none;
+}
+
+:focus-visible {
+
+    outline: 3px solid var(--color-action-primary);
+
+    outline-offset: 3px;
+
+    border-radius: var(--radius-sm);
+}

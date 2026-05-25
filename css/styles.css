@@ -1,75 +1,39 @@
-@import url("./tokens/primitivos.css");
-@import url("./tokens/semanticos.css");
-@import url("./tokens/componentes.css");
+/* styles.css */
 
-/* TABLET */
-@media (min-width: 768px) {
+/* DECLARAÇÃO DAS CAMADAS */
 
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: var(--space-sm) var(--space-lg);
-    }
+@layer tokens, reset, base, layout, components, overrides;
 
-    main {
-        grid-template-columns: var(--sidebar-width) 1fr;
-        grid-template-areas: "sidebar content";
-    }
+/* TOKENS */
 
-    .sidebar {
-        display: block;
-        grid-area: sidebar;
-        background: var(--color-surface);
-        padding: var(--space-sm);
-        border-radius: var(--radius-md);
-    }
+@import url("./tokens/primitivos.css") layer(tokens);
 
-    .content-area {
-        grid-area: content;
-    }
+@import url("./tokens/semanticos.css") layer(tokens);
 
-    .timeline-thread {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+@import url("./tokens/componentes.css") layer(tokens);
 
-/* DESKTOP */
-@media (min-width: 1024px) {
+/* RESET */
 
-    main {
-        grid-template-columns:
-            var(--sidebar-width)
-            1fr
-            var(--aside-width);
+@import url("./base/reset.css") layer(reset);
 
-        grid-template-areas:
-            "sidebar content aside";
-    }
+/* BASE */
 
-    .aside {
-        display: block;
-        grid-area: aside;
-        background: var(--color-surface);
-        padding: var(--space-sm);
-        border-radius: var(--radius-md);
-    }
+@import url("./base/base.css") layer(base);
 
-    .timeline-thread {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+/* LAYOUT */
 
-/* ELEMENTOS GERAIS */
-img,
-video,
-iframe {
-    max-width: 100%;
-    display: block;
-}
+@import url("./layout/layout.css") layer(layout);
 
-input,
-select,
-textarea {
-    width: 100%;
-    box-sizing: border-box;
-}
+/* COMPONENTS */
+
+@import url("./components/cards.css") layer(components);
+
+@import url("./components/buttons.css") layer(components);
+
+@import url("./components/forms.css") layer(components);
+
+@import url("./components/navbar.css") layer(components);
+
+/* OVERRIDES */
+
+@import url("./overrides/overrides.css") layer(overrides);
