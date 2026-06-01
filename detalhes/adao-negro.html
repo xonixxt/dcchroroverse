@@ -1,49 +1,200 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adão Negro - DC ChronoVerse</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components/btn.css">
-    <link rel="stylesheet" href="css/components/badge.css">
-    <link rel="stylesheet" href="css/components/navbar.css">
-    <link rel="stylesheet" href="css/components/card.css">
-    <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/utilities.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Adão Negro | DC ChronoVerse</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="stylesheet" href="../css/details.css">
+
 </head>
+
 <body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <nav class="navbar container"
+             aria-label="Navegação principal">
+
+            <a href="../cronologia.html"
+               class="navbar__brand">
+
+                <span class="navbar__logo-text">
+                    DC ChronoVerse
+                </span>
+
+            </a>
+
+            <ul class="navbar__menu"
+                role="list">
+
+                <li class="navbar__item">
+                    <a href="../cronologia.html"
+                       class="navbar__link">
+                        Início
+                    </a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#"
+                       class="navbar__link">
+                        Filmes
+                    </a>
+                </li>
+
+                <li class="navbar__item">
+                    <a href="#"
+                       class="navbar__link">
+                        Séries
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTEÚDO -->
+
     <main class="movie-details">
+
         <article>
-            <header><h1>Adão Negro</h1></header>
+
+            <!-- TÍTULO -->
+
+            <header>
+
+                <h1>Adão Negro</h1>
+
+            </header>
+
+            <!-- TRAILER -->
+
             <section class="video-container">
-                <iframe src="https://www.youtube.com/embed/9X56In_TfN0" allowfullscreen></iframe>
+
+                <iframe
+                    src="https://www.youtube.com/embed/9X56In_TfN0"
+                    title="Trailer Adão Negro"
+                    allowfullscreen>
+                </iframe>
+
             </section>
+
+            <!-- INFORMAÇÕES -->
+
             <section class="info">
+
                 <h2>Informações Técnicas</h2>
+
                 <div class="specs-grid">
+
                     <ul>
-                        <li><strong>Data de Lançamento:</strong> 20 de outubro de 2022</li>
-                        <li><strong>Direção:</strong> Jaume Collet-Serra</li>
-                        <li><strong>Roteirista(s):</strong> Adam Sztykiel, Rory Haines e Sohrab Noshirvani</li>
+
+                        <li>
+                            <strong>Data de lançamento:</strong>
+                            20 de outubro de 2022
+                        </li>
+
+                        <li>
+                            <strong>Direção:</strong>
+                            Jaume Collet-Serra
+                        </li>
+
+                        <li>
+                            <strong>Roteiro:</strong>
+                            Adam Sztykiel,
+                            Rory Haines e
+                            Sohrab Noshirvani
+                        </li>
+
                     </ul>
+
                     <ul>
-                        <li><strong>Produtor(es):</strong> Beau Flynn, Dwayne Johnson, Hiram Garcia e Dany Garcia</li>
-                        <li><strong>Rede:</strong> Cinema</li>
+
+                        <li>
+                            <strong>Produção:</strong>
+                            Beau Flynn,
+                            Dwayne Johnson,
+                            Hiram Garcia e
+                            Dany Garcia
+                        </li>
+
+                        <li>
+                            <strong>Distribuição:</strong>
+                            Warner Bros.
+                        </li>
+
+                        <li>
+                            <strong>Duração:</strong>
+                            125 minutos
+                        </li>
+
                     </ul>
+
                 </div>
+
+                <!-- SINOPSE -->
+
+                <section class="synopsis">
+
+                    <h2>Sinopse</h2>
+
+                    <p>
+
+                        Após quase cinco mil anos aprisionado,
+                        Teth-Adam é libertado e retorna ao mundo
+                        moderno como Adão Negro. Dotado de poderes
+                        comparáveis aos dos deuses, ele busca impor
+                        sua própria visão de justiça, entrando em
+                        conflito com a Sociedade da Justiça e
+                        mudando o equilíbrio de poder do universo.
+
+                    </p>
+
+                </section>
+
             </section>
-            <footer><a href="../cronologia.html" class="btn-back">Voltar</a></footer>
+
+            <!-- BOTÃO -->
+
+            <footer>
+
+                <a href="../cronologia.html"
+                   class="btn-back">
+
+                    ← Voltar para Cronologia
+
+                </a>
+
+            </footer>
+
         </article>
+
     </main>
-    <footer>
-        <p>&copy; 2026 DC ChronoVerse - Projeto de Aplicações para Internet</p>
+
+    <!-- FOOTER -->
+
+    <footer class="page-footer">
+
+        <p>
+
+            © 2026 DC ChronoVerse —
+            Projeto da disciplina de Aplicações para Internet
+
+        </p>
+
     </footer>
+
 </body>
+
 </html>

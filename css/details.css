@@ -1,0 +1,238 @@
+/* =====================================
+   PÁGINAS DE DETALHES DOS FILMES
+===================================== */
+
+
+.movie-details {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding: 3rem 1rem;
+
+    background: #f4f6fb;
+}
+
+.movie-details article {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+/* HERO */
+
+.movie-details header {
+
+    padding: 2rem;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+
+    color: white;
+}
+
+.movie-details h1 {
+
+    font-size: clamp(
+        2rem,
+        4vw,
+        3rem
+    );
+
+    font-weight: 700;
+}
+
+/* TRAILER */
+
+.video-container {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    background: #000;
+}
+
+.video-container iframe {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+}
+
+/* CONTEÚDO */
+
+.info {
+
+    padding: 2rem;
+}
+
+.info h2 {
+
+    margin-bottom: 1.5rem;
+
+    color: #1e293b;
+
+    font-size: 1.6rem;
+}
+
+/* GRID DE INFORMAÇÕES */
+
+.specs-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+.specs-grid ul {
+
+    list-style: none;
+
+    padding: 0;
+}
+
+.specs-grid li {
+
+    padding: 1rem;
+
+    margin-bottom: .75rem;
+
+    background: #f8fafc;
+
+    border-left: 4px solid #2563eb;
+
+    border-radius: 10px;
+
+    color: #475569;
+}
+
+.specs-grid strong {
+
+    color: #0f172a;
+}
+
+/* SINOPSE */
+
+.synopsis {
+
+    margin-top: 2rem;
+
+    padding-top: 2rem;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+.synopsis h2 {
+
+    margin-bottom: 1rem;
+}
+
+.synopsis p {
+
+    color: #475569;
+
+    line-height: 1.8;
+}
+
+/* BOTÃO */
+
+.movie-details footer {
+
+    padding: 2rem;
+
+    text-align: center;
+}
+
+.btn-back {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: .9rem 2rem;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.btn-back:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+/* FOOTER GLOBAL */
+
+.page-footer {
+
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .movie-details {
+
+        padding: 1rem;
+    }
+
+    .movie-details header {
+
+        padding: 1.5rem;
+    }
+
+    .specs-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+
+        padding: 1.5rem;
+    }
+}

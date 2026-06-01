@@ -1,29 +1,30 @@
-/* base/base.css */
-
-/* CONFIGURAÇÕES BASE */
 
 body {
-    line-height: 1.5;
-    font-family: sans-serif;
+
+    font-family: "Poppins", sans-serif;
+
+    background: var(--color-background);
+
+    color: var(--color-text-primary);
+
+    line-height: 1.6;
+
 }
 
-/* ACESSIBILIDADE — FOCO VISÍVEL */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-/*
-    Nunca remover foco sem alternativa.
-    :focus-visible aparece apenas
-    na navegação por teclado.
-*/
+ul {
+    list-style: none;
+}
 
 :focus {
     outline: none;
 }
 
 :focus-visible {
-
     outline: 3px solid var(--color-action-primary);
-
     outline-offset: 3px;
-
-    border-radius: var(--radius-sm);
 }

@@ -1,0 +1,31 @@
+.sidebar {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 1.5rem;
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+.sidebar__menu {
+
+    list-style: none;
+
+}
+
+.sidebar__menu li {
+
+    margin-bottom: .8rem;
+
+}
+
+.sidebar__menu a {
+
+    text-decoration: none;
+
+    color: var(--color-text-primary);
+
+}

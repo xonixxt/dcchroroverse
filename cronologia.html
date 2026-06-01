@@ -1,349 +1,690 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DC ChronoVerse</title>
+
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/components/btn.css">
-    <link rel="stylesheet" href="css/components/badge.css">
-    <link rel="stylesheet" href="css/components/navbar.css">
-    <link rel="stylesheet" href="css/components/card.css">
-    <link rel="stylesheet" href="css/components/footer.css">
-    <link rel="stylesheet" href="css/utilities.css">
-    
-</head>   
+
+</head>
 
 <body>
+
+    <!-- HEADER -->
+
     <header class="header">
-        <nav class="navbar" aria-label="Navegação principal">
-            <a href="/" class="navbar__brand" aria-label="Ir para pagina inicial">
-                <span class="navbar__logo-text">Meu Projeto</span>
+
+        <nav class="navbar container" aria-label="Navegação principal">
+
+            <a href="cronologia.html" class="navbar__brand">
+
+                <span class="navbar__logo-text">
+                    DC ChronoVerse
+                </span>
+
             </a>
- 
-            
-            <button class="navbar__toggle" aria-expanded="false" aria-controls="navbar-menu" aria-label="Abrir menu">
-                <span class="navbar__toggle-bar"></span>
-                <span class="navbar__toggle-bar"></span>
-                <span class="navbar__toggle-bar"></span>
-            </button>
-            
-            <ul class="navbar__menu" id="navbar-menu" role="list"><li class="navbar__item">
-                <a href="/" class="navbar__link navbar__link--active"aria-current="page">Inicio</a>
-            </li>
-            <li class="navbar__item">
-                <a href="/sobre" class="navbar__link">Sobre</a>
-            </li>
-            <li class="navbar__item">
-                <a href="/contato" class="navbar__link">Contato</a>
-            </li>
-        </ul>
-        
-        <a href="/login" class="btn btn--primary navbar__cta">Entrar</a>
-    </nav>
-</header>
-    <main class="main"> 
-        <section class="section">
-            <h2 class="section__title">Disciplinas do Semestre</h2>
-            <div class="cards-grid"><!-- Cards aqui --></div>
-        </section>
-    </main>
-    <footer class="footer"><!-- Footer aqui --></footer>
-    <script src="js/main.js"></script>
-</body>
 
-<header>
-    <h1>DC ChronoVerse</h1>
-</header>
+            <ul class="navbar__menu" role="list">
 
-<main>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-        <h3>Menu</h3>
-        <ul>
-            <li>Início</li>
-            <li>Filmes</li>
-            <li>Séries</li>
-        </ul>
-    </aside>
-
-    <!-- CONTEÚDO PRINCIPAL -->
-    <section class="content-area">
-        <section class="timeline-thread">
-            
-            <!--Estrutura semântica do Card-->
-            <article class="card">
-                <figure class="card__figure">
-                    <img src="thumb.jpg" alt="Descrição real da imagem" class="card__img" loading="lazy">
-                </figure>
-                <div class="card__body">
-                    <header class="card__header">
-                        <span class="badge badge--primary">Novo</span>
-                    </header>
-                    <h3 class="card__title">Titulo do Card</h3>
-                    <p class="card__description">
-                        Descrição concisa do conteúdo. Máximo de duas ou três linhas para manter a consistência visual na grade.
-                    </p>
-                    <footer class="card__footer">
-                        <a href="/detalhe" class="btn btn--outline">Saiba mais</a>
-                    </footer>
-                </div>
-            </article>
-
-            <article class="timeline-item">
-                <div class="chrono-date">2017</div>
-                <div class="content">
-                    <a href="detalhes\mulher-maravilha.html">
-                        <img src="img\mulhermaravilha2017.jpg" alt="mulhermaravilha2017">
-                        <h2>Mulher-Maravilha</h2>
+                <li class="navbar__item">
+                    <a href="cronologia.html"
+                        class="navbar__link navbar__link--active">
+                        Início
                     </a>
-                </div>
-            </article>
+                </li>
 
-            <article class="timeline-item">
-                <div class="chrono-date">2020</div>
-                <div class="content">
-                    <a href="detalhes\mulher-maravilha-1984.html">
-                        <img src="" alt="">
-                        <h2>Mulher-Maravilha 1984</h2>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">
+                        Filmes
                     </a>
-                </div>
-            </article>
+                </li>
 
-            <article class="timeline-item">
-                <div class="chrono-date">2013</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>O Homem de Aço</h2>
-                    </a>
-                </div>
-            </article>
 
-            <article class="timeline-item">
-                <div class="chrono-date">2015</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>Batman vs Superman</h2>
-                    </a>
-                </div>
-            </article>
+            </ul>
 
-            <article class="timeline-item">
-                <div class="chrono-date">2016</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>Esquadrão Suicida</h2>
-                    </a>
-                </div>
-            </article>
+            <a href="login.html"
+                class="btn btn--primary navbar__cta">
 
-            <article class="timeline-item">
-                <div class="chrono-date">2017</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>Liga da Justiça</h2>
-                    </a>
-                </div>
-            </article>
+                Entrar
 
-            <article class="timeline-item">
-                <div class="chrono-date">2018</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>Aquaman</h2>
-                    </a>
-                </div>
-            </article>
+            </a>
 
-            <article class="timeline-item">
-                <div class="chrono-date">2019</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>Shazam!</h2>
-                    </a>
-                </div>
-            </article>
+        </nav>
 
-            <article class="timeline-item">
-                <div class="chrono-date">2020</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>Aves de Rapina</h2>
-                    </a>
-                </div>
-            </article>
+    </header>
 
-            <article class="timeline-item">
-                <div class="chrono-date">2021</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>O Esquadrão Suicida</h2>
-                    </a>
-                </div>
-            </article>
+    <!-- HERO -->
 
-            <article class="timeline-item">
-                <div class="chrono-date">2022</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>Adão Negro</h2>
-                    </a>
-                </div>
-            </article>
+    <section class="hero">
 
-            <article class="timeline-item">
-                <div class="chrono-date">2023</div>
-                <div class="content">
-                    <a href="#">
-                        <img src="" alt="">
-                        <h2>The Flash</h2>
-                    </a>
-                </div>
-            </article>
+        <div class="container">
 
-        </section>
+            <h1 class="hero__title">
+                Cronologia do Universo DC atual
+            </h1>
+
+            <p class="hero__subtitle">
+Explore a cronologia completa do Universo Estendido DC.
+
+            </p>
+
+        </div>
+
     </section>
 
-    <!-- ASIDE -->
-    <aside class="aside">
-        <h3>Destaques</h3>
-        <p>Em breve novidades do universo DC</p>
-    </aside>
+    <!-- MAIN -->
 
-</main>
+    <main class="main-layout container">
 
-<!-- footer.html — Estrutura semântica -->
+        <!-- SIDEBAR -->
 
-<footer class="footer">
+        <aside class="sidebar">
 
-    <div class="footer__container">
+            <h2 class="sidebar__title">
+                Navegação
+            </h2>
 
-        <!-- Zona 1: Informações e navegação -->
+            <ul class="sidebar__menu">
 
-        <div class="footer__grid">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Filmes</a></li>
 
-            <div class="footer__brand">
+            </ul>
 
-                <p class="footer__brand-name">
+        </aside>
+
+        <!-- CONTEÚDO -->
+
+        <section class="content-area">
+
+            <h2 class="section-title">
+                Linha do Tempo
+            </h2>
+
+            <section class="cards-grid">
+
+                <!-- CARD 1 -->
+
+                <article class="card">
+
+                    <figure class="card__figure">
+
+                        <img
+                            src="img/mulhermaravilha2017.jpg"
+                            alt="Poster do filme Mulher-Maravilha"
+                            class="card__img">
+
+                    </figure>
+
+                    <div class="card__body">
+
+                        <header class="card__header">
+
+                            <span class="badge badge--primary">
+                                2017
+                            </span>
+
+                        </header>
+
+                        <h3 class="card__title">
+                            Mulher-Maravilha
+                        </h3>
+
+                        <p class="card__description">
+
+                            A jornada de Diana Prince antes da Liga da Justiça.
+
+                        </p>
+
+                        <footer class="card__footer">
+
+                            <a href="detalhes/mulher-maravilha.html"
+                                class="btn btn--outline">
+
+                                Saiba mais
+
+                            </a>
+
+                        </footer>
+
+                    </div>
+
+                </article>
+
+                <!-- CARD 2 -->
+
+                <article class="card">
+
+    <figure class="card__figure">
+        <img src="img/mulher-maravilha-1984.jpg"
+             alt="Poster do filme Mulher-Maravilha 1984"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+
+        <header class="card__header">
+            <span class="badge badge--primary">2020</span>
+        </header>
+
+        <h3 class="card__title">Mulher-Maravilha 1984</h3>
+
+        <p class="card__description">
+            Diana enfrenta novos inimigos durante a década de 1980.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/mulher-maravilha-1984.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+
+    </div>
+
+</article>
+
+                <!-- CARD 3 -->
+<article class="card">
+
+    <figure class="card__figure">
+        <img src="img/homem-de-aco.jpg"
+             alt="Poster do filme Homem de Aço"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+
+        <header class="card__header">
+            <span class="badge badge--primary">2013</span>
+        </header>
+
+        <h3 class="card__title">O Homem de Aço</h3>
+
+        <p class="card__description">
+            A origem de Clark Kent e sua jornada para se tornar o Superman.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/homem-de-aco.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+
+    </div>
+
+</article>
+                <!-- CARD 4 -->
+<article class="card">
+
+    <figure class="card__figure">
+        <img src="img/batman-vs-superman.jpg"
+             alt="Poster do filme Batman vs Superman"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+
+        <header class="card__header">
+            <span class="badge badge--primary">2016</span>
+        </header>
+
+        <h3 class="card__title">
+            Batman vs Superman
+        </h3>
+
+        <p class="card__description">
+            O Cavaleiro das Trevas enfrenta o Homem de Aço.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/batman-vs-superman.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+
+    </div>
+
+</article>
+                <!-- CARD 5 -->
+<article class="card">
+
+    <figure class="card__figure">
+        <img src="img/batman-vs-superman-ultimate.jpg"
+             alt="Poster Batman vs Superman Ultimate Edition"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+
+        <header class="card__header">
+            <span class="badge badge--primary">2016</span>
+        </header>
+
+        <h3 class="card__title">
+            Batman vs Superman (Edição Definitiva)
+        </h3>
+
+        <p class="card__description">
+            Versão estendida com cenas inéditas e narrativa ampliada.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/batman-vs-superman-definitiva.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+
+    </div>
+
+</article>
+         
+<!-- CARD 6 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/esquadrao-suicida.jpg"
+             alt="Poster Esquadrão Suicida"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2016</span>
+        </header>
+
+        <h3 class="card__title">Esquadrão Suicida</h3>
+
+        <p class="card__description">
+            Vilões são recrutados para missões secretas pelo governo.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/esquadrao-suicida.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 7 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/liga-da-justica.jpg"
+             alt="Poster Liga da Justiça"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2017</span>
+        </header>
+
+        <h3 class="card__title">Liga da Justiça</h3>
+
+        <p class="card__description">
+            Batman reúne os maiores heróis para salvar o planeta.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/liga-da-justica.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 8 -->
+<article class="card">
+    <figure class="card__figure">
+        <img src="img/liga-da-justica-zack-snyder.jpg"
+             alt="Poster Liga da Justiça de Zack Snyder"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2021</span>
+        </header>
+
+        <h3 class="card__title">
+            Liga da Justiça de Zack Snyder
+        </h3>
+
+        <p class="card__description">
+            Versão completa da visão original de Zack Snyder.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/liga-da-justica-zack-snyder.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 9 -->
+<article class="card">
+    <figure class="card__figure">
+        <img src="img/aquaman.jpg"
+             alt="Poster Aquaman"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2018</span>
+        </header>
+
+        <h3 class="card__title">Aquaman</h3>
+
+        <p class="card__description">
+            Arthur Curry precisa assumir seu destino como rei de Atlântida.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/aquaman.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 10 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/shazam.jpg"
+             alt="Poster Shazam"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2019</span>
+        </header>
+
+        <h3 class="card__title">Shazam!</h3>
+
+        <p class="card__description">
+            Um adolescente recebe poderes mágicos extraordinários.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/shazam.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 11 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/aves-de-rapina.jpg"
+             alt="Poster Aves de Rapina"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2020</span>
+        </header>
+
+        <h3 class="card__title">Aves de Rapina</h3>
+
+        <p class="card__description">
+            Arlequina forma uma improvável equipe de heroínas.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/aves-de-rapina.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 12 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/o-esquadrao-suicida.jpg"
+             alt="Poster O Esquadrão Suicida"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2021</span>
+        </header>
+
+        <h3 class="card__title">O Esquadrão Suicida</h3>
+
+        <p class="card__description">
+            Uma nova missão coloca os anti-heróis em perigo extremo.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/o-esquadrao-suicida.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+<article class="card">
+
+    <!-- CARD 13 -->
+    <figure class="card__figure">
+        <img
+            src="img/shazam-furia-dos-deuses.jpg"
+            alt="Poster de Shazam Fúria dos Deuses"
+            class="card__img">
+    </figure>
+
+    <div class="card__body">
+
+        <header class="card__header">
+            <span class="badge badge--primary">2023</span>
+        </header>
+
+        <h3 class="card__title">
+            Shazam! Fúria dos Deuses
+        </h3>
+
+        <p class="card__description">
+            Shazam e sua família enfrentam as Filhas de Atlas.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/shazam-furia-dos-deuses.html"
+                class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+
+    </div>
+
+</article>
+
+<!-- CARD 14 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/adao-negro.jpg"
+             alt="Poster Adão Negro"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2022</span>
+        </header>
+
+        <h3 class="card__title">Adão Negro</h3>
+
+        <p class="card__description">
+            O anti-herói mais poderoso do universo DC desperta.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/adao-negro.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 15 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/the-flash.jpg"
+             alt="Poster The Flash"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2023</span>
+        </header>
+
+        <h3 class="card__title">The Flash</h3>
+
+        <p class="card__description">
+            Barry Allen altera a linha do tempo ao viajar no passado.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/the-flash.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+<!-- CARD 16 -->
+ <article class="card">
+    <figure class="card__figure">
+        <img src="img/aquaman-2.jpg"
+             alt="Poster Aquaman e o Reino Perdido"
+             class="card__img">
+    </figure>
+
+    <div class="card__body">
+        <header class="card__header">
+            <span class="badge badge--primary">2023</span>
+        </header>
+
+        <h3 class="card__title">
+            Aquaman e o Reino Perdido
+        </h3>
+
+        <p class="card__description">
+            Aquaman enfrenta uma antiga ameaça para salvar Atlântida.
+        </p>
+
+        <footer class="card__footer">
+            <a href="detalhes/aquaman-2.html"
+               class="btn btn--outline">
+                Saiba mais
+            </a>
+        </footer>
+    </div>
+</article>
+
+            </section>
+
+        </section>
+
+        <!-- ASIDE -->
+
+        <aside class="aside">
+
+            <h2>Destaques</h2>
+
+            <p>
+                Em breve novidades do universo DC.
+            </p>
+
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="footer__grid">
+
+                <div class="footer__brand">
+
+                    <p class="footer__brand-name">
+                        DC ChronoVerse
+                    </p>
+
+                    <p class="footer__tagline">
+
+                        Explore a cronologia completa
+                        do universo cinematográfico da DC.
+
+                    </p>
+
+                </div>
+
+                <nav class="footer__nav">
+
+                    <h4 class="footer__nav-title">
+                        Navegação
+                    </h4>
+
+                    <ul class="footer__nav-list">
+
+                        <li><a href="#" class="footer__link">Início</a></li>
+                        <li><a href="#" class="footer__link">Filmes</a></li>
+                        <li><a href="#" class="footer__link">Cronologia</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <div class="footer__bottom">
+
+                <p class="footer__copyright">
+
+                    © <span id="footer-year"></span>
                     DC ChronoVerse
-                </p>
 
-                <p class="footer__tagline">
-                    Explore a cronologia completa do universo cinematográfico da DC.
                 </p>
 
             </div>
 
-            <nav class="footer__nav" aria-label="Links de navegação">
-
-                <h4 class="footer__nav-title">
-                    Navegação
-                </h4>
-
-                <ul class="footer__nav-list" role="list">
-
-                    <li>
-                        <a href="#" class="footer__link">
-                            Início
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer__link">
-                            Filmes
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer__link">
-                            Cronologia
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <nav class="footer__nav" aria-label="Links de suporte">
-
-                <h4 class="footer__nav-title">
-                    Suporte
-                </h4>
-
-                <ul class="footer__nav-list" role="list">
-
-                    <li>
-                        <a href="#" class="footer__link">
-                            FAQ
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="footer__link">
-                            Contato
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
         </div>
 
-        <!-- Zona 2: Copyright -->
+    </footer>
 
-        <div class="footer__bottom">
+    <script>
 
-            <p class="footer__copyright">
+        document.getElementById("footer-year")
+            .textContent = new Date().getFullYear();
 
-                &copy;
-                <span id="footer-year"></span>
-                DC ChronoVerse. Todos os direitos reservados.
-
-            </p>
-
-            <nav class="footer__legal" aria-label="Links legais">
-
-                <a href="#" class="footer__link">
-                    Privacidade
-                </a>
-
-                <a href="#" class="footer__link">
-                    Termos
-                </a>
-
-            </nav>
-
-        </div>
-
-    </div>
-
-</footer>
-
-<!-- JS: Ano dinâmico -->
-
-<script>
-
-    document.getElementById("footer-year").textContent =
-        new Date().getFullYear();
-
-</script>
+    </script>
 
 </body>
+
 </html>

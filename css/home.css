@@ -1,0 +1,351 @@
+/* ==========================================
+   HOME / CRONOLOGIA
+========================================== */
+
+/* HERO */
+
+.hero {
+
+    padding: 5rem 2rem;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0066ff,
+            #4f8cff
+        );
+
+    color: white;
+
+    border-radius: 0 0 30px 30px;
+
+    margin-bottom: 3rem;
+
+}
+
+.hero__title {
+
+    font-size: clamp(
+        2.5rem,
+        5vw,
+        4rem
+    );
+
+    margin-bottom: 1rem;
+
+}
+
+.hero__subtitle {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    opacity: .9;
+
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.main-layout {
+
+    padding-top: 2rem;
+
+    padding-bottom: 3rem;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar {
+
+    background: var(--color-surface);
+
+    border-radius: var(--radius-md);
+
+    padding: 1.5rem;
+
+    height: fit-content;
+
+    position: sticky;
+
+    top: 1rem;
+
+}
+
+.sidebar__title {
+
+    font-size: 1.2rem;
+
+    margin-bottom: 1rem;
+
+}
+
+.sidebar__menu {
+
+    list-style: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: .75rem;
+
+}
+
+.sidebar__menu a {
+
+    text-decoration: none;
+
+    color: var(--color-text-primary);
+
+    padding: .6rem .8rem;
+
+    border-radius: var(--radius-sm);
+
+    transition: .3s;
+
+}
+
+.sidebar__menu a:hover {
+
+    background: rgba(255,255,255,.05);
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.content-area {
+
+    width: 100%;
+
+}
+
+.section-title {
+
+    font-size: 1.8rem;
+
+    font-weight: 600;
+
+    margin-bottom: 2rem;
+
+}
+
+/* ==========================================
+   GRID DE CARDS
+========================================== */
+
+.cards-grid {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card {
+
+    background: var(--color-surface);
+
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.card__figure {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+.card__img {
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+}
+
+.card__body {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    padding: 1rem;
+
+}
+
+.card__header {
+
+    margin-bottom: .75rem;
+
+}
+
+.card__title {
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    margin-bottom: .75rem;
+
+}
+
+.card__description {
+
+    color: var(--color-text-secondary);
+
+    line-height: 1.6;
+
+    margin-bottom: 1rem;
+
+    flex-grow: 1;
+
+}
+
+.card__footer {
+
+    margin-top: auto;
+
+}
+
+.content-area {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+/* ==========================================
+   BADGE
+========================================== */
+
+.badge {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: .35rem .75rem;
+
+    border-radius: 999px;
+
+    font-size: .8rem;
+
+    font-weight: 600;
+
+}
+
+.badge--primary {
+
+    background: var(--color-action-primary);
+
+    color: #fff;
+
+}
+
+/* ==========================================
+   ASIDE
+========================================== */
+
+.aside {
+
+    background: var(--color-surface);
+
+    border-radius: var(--radius-md);
+
+    padding: 1.5rem;
+
+    height: fit-content;
+
+}
+
+.aside h2 {
+
+    margin-bottom: 1rem;
+
+}
+
+.aside p {
+
+    color: var(--color-text-secondary);
+
+    line-height: 1.6;
+
+}
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 1023px) {
+
+    .sidebar,
+    .aside {
+
+        position: static;
+
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .hero {
+
+        padding: 3rem 1rem;
+
+    }
+
+    .hero__title {
+
+        font-size: 2rem;
+
+    }
+
+    .section-title {
+
+        text-align: center;
+
+    }
+
+}

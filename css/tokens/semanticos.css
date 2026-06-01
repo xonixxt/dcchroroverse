@@ -1,36 +1,38 @@
-/*Convenção adotada:
-   - Tokens semânticos representam o SIGNIFICADO visual
-     dentro da interface.
-   - São construídos utilizando tokens primitivos.
-   - Facilitam troca de tema (dark/light mode)
-     sem alterar componentes.*/
-
 :root {
 
+    /* CORES PRINCIPAIS */
+
+    --color-primary: #0066ff;
+    --color-primary-hover: #0052cc;
+
     /* BACKGROUNDS */
-    --color-bg: var(--gray-900);
-    --color-surface: var(--gray-800);
-    --color-surface-alt: var(--gray-700);
 
-    /* TEXT */
-    --color-text: var(--white);
-    --color-text-muted: var(--gray-300);
+    --color-background: #f4f7fb;
 
-    /* BRAND */
-    --color-primary: var(--blue-500);
-    --color-primary-hover: var(--blue-700);
+    --color-surface: #ffffff;
 
-    /* COMPONENTS */
-    --card-bg:
-        linear-gradient(
-            180deg,
-            var(--color-surface-alt),
-            var(--color-surface)
-        );
+    --color-surface-alt: #edf2f7;
 
-    --border-primary:
-        2px solid var(--color-primary);
+    /* TEXTOS */
 
-    --image-placeholder:
-        var(--gray-500);
+    --color-text-primary: #1e293b;
+
+    --color-text-secondary: #64748b;
+
+    /* AÇÕES */
+
+    --color-action-primary: #0066ff;
+
+    /* BORDAS */
+
+    --color-border: #dbe4ee;
+
+    /* SOMBRAS */
+
+    --shadow-sm:
+        0 2px 8px rgba(0,0,0,.05);
+
+    --shadow-md:
+        0 4px 20px rgba(0,0,0,.08);
+
 }

@@ -1,0 +1,17 @@
+.timeline-thread {
+
+    display: grid;
+
+    gap: var(--space-md);
+
+}
+
+.timeline-item {
+
+    background: var(--color-surface);
+
+    padding: var(--space-md);
+
+    border-radius: var(--radius-md);
+
+}

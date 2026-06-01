@@ -1,39 +1,18 @@
-/* styles.css */
+@import url("./tokens/primitivos.css");
+@import url("./tokens/semanticos.css");
 
-/* DECLARAÇÃO DAS CAMADAS */
+@import url("./reset.css");
+@import url("./base.css");
+@import url("./layout.css");
+@import url("./componentes.css");
 
-@layer tokens, reset, base, layout, components, overrides;
+@import url("./components/navbar.css");
+@import url("./components/card.css");
+@import url("./components/badge.css");
+@import url("./components/btn.css");
+@import url("./components/footer.css");
+@import url("./components/sidebar.css");
+@import url("./components/timelines.css");
 
-/* TOKENS */
-
-@import url("./tokens/primitivos.css") layer(tokens);
-
-@import url("./tokens/semanticos.css") layer(tokens);
-
-@import url("./tokens/componentes.css") layer(tokens);
-
-/* RESET */
-
-@import url("./base/reset.css") layer(reset);
-
-/* BASE */
-
-@import url("./base/base.css") layer(base);
-
-/* LAYOUT */
-
-@import url("./layout/layout.css") layer(layout);
-
-/* COMPONENTS */
-
-@import url("./components/cards.css") layer(components);
-
-@import url("./components/buttons.css") layer(components);
-
-@import url("./components/forms.css") layer(components);
-
-@import url("./components/navbar.css") layer(components);
-
-/* OVERRIDES */
-
-@import url("./overrides/overrides.css") layer(overrides);
+@import url("./home.css");
+@import url("./utilities.css");
